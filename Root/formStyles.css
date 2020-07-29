@@ -1,0 +1,402 @@
+/*
+Books and Tablets Style stylesheet
+
+Author: Surav Dhungana and Victoria Shearing
+Date: July 19, 2020
+Filename: styles.css
+Supporting Files: go.png, stop.png
+*/
+
+/* Display HTML5 structural elements as blocks */
+
+article, aside, figure, figcaption, footer, hgroup, header, section, nav, ul {
+display: block;
+}
+
+/* Set the default page element styles */
+
+body {
+  margin: 0px auto;
+  width: 835px;
+  background: url("Assets/Images/school.jpg")
+}
+body * {
+  font-family: Papyrus, Geneva, sans-serif;
+  font-size: 100%;
+  font-weight: inherit;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+/* Navigation links */
+nav ul {
+  list-style: none;
+  margin-top: 5px;
+}
+
+nav li {
+  float: left;
+  width: 15%;
+  text-align: center;
+  border: 1px solid rgb(55, 103, 149);
+  margin: 5px 2px 15px 2px;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+nav li a {
+  display: block;
+  color: rgb(55, 103, 149);
+  text-decoration: none;
+  background-color: white;
+}
+
+nav li a:hover {
+  color: white;
+  background-color: rgb(55, 103, 149);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* h1, h2, p and other parts of main content */
+
+article {
+  margin: 0 auto;
+  padding: 1em;
+  background-color: rgb(255, 255, 255);
+
+}
+.container {
+   min-width: 600px;
+   max-width: 835px;
+   margin: 0 auto;
+   padding: 0 3% 1em;
+   background-color: #edf2f4;;
+   overflow: auto;
+}
+h1 {
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  color: rgb(55, 103, 149);
+  margin-top: 15px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 5px;
+  color: rgb(55, 103, 149);
+  margin-top: 15px;
+}
+
+p {
+  margin: 7px;
+}
+section {
+  background-color: rgb(255, 255, 255);
+}
+
+#main {
+  border-top: 2px solid rgb(55, 103, 149);
+}
+
+#main ul {
+  list-style-type: circle;
+  margin-left: 50px;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#main ul li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+#main ul li strong {
+  font-weight: normal;
+  color: rgb(55, 103, 149);
+}
+
+#science {
+  border-top: 2px solid rgb(55, 103, 149);
+}
+
+#science ul {
+  list-style-type: circle;
+  margin-left: 50px;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#science ul li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+#science ul li strong {
+  font-weight: normal;
+  color: rgb(55, 103, 149);
+}
+#socialStudies {
+  border-top: 2px solid rgb(55, 103, 149);
+}
+
+#socialStudies ul {
+  list-style-type: circle;
+  margin-left: 50px;
+  font-size: 12px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#socialStudies ul li {
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+#socialStudies ul li strong {
+  font-weight: normal;
+  color: rgb(55, 103, 149);
+}
+
+footer {
+  border-top: 2px solid rgb(55, 103, 149);
+  clear: both;
+  float: left;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+
+address {
+  font-style: normal;
+  font-size: 10px;
+  text-align: center;
+  padding: 5px;
+}
+/* aside styles */
+aside {
+  display: block;
+  width: 400px;
+  float: right;
+  background-color: #edf2f4;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 5px 0px 20px 20px;
+}
+aside img {
+  float: right;
+  margin: 5px;
+  max-width: auto;
+  height: 150px;
+  width: 130px;
+  box-shadow: 5px 5px 5px #888888;
+}
+aside h2 {
+  color: red;
+}
+aside {
+  height: 250px;
+  overflow: auto;
+}
+
+/* image styles */
+img.irregularWrap {
+  clear: right;
+  float: right;
+  margin: 0px;
+}
+/* table styles */
+table {
+  fornt-size: 14px;
+  /*border-collapse: collapse; */
+  border: 5px outset #ef233c;
+  margin: 10px auto;
+  width: 650px;
+  box-shadow: 10px 10px 10px #888888;
+}
+thead {
+  background-color: #8d99ae;
+}
+th, td {
+  border: 1px solid black;
+  vertical-align: top;
+  padding: 5px;
+}
+th {
+  font-weight: bold;
+}
+tr td:nth-of-type(2), tr td:nth-of-type(3), tr td:nth-of-type(4){
+  text-align: center;
+  background-color: #edf2f4;
+}
+
+}
+.freeColumns {
+  background-color: #edf2f4;
+}
+ /* audio styles */
+ audio, object, embed {
+   diplay: block;
+   margin: 15px auto;
+   align: center;
+ }
+
+/* Field set styles */
+.contactinfo {
+  background-color: #edf2f4;
+  border: none;
+  float: right;
+  margin: 10px 0px 10px 2.5%;
+  width: 100%;
+}
+legend {
+  color: white;
+  padding: 5px;
+}
+
+fieldset {
+  border: 2px solid black;
+  padding: 2%;
+  margin-bottom: 0.8em;
+}
+
+.submitbutton {
+  border: none;
+  text-align: center;
+}
+/* field styles */
+input, textarea {
+  border: 1px solid #777;
+  padding: 0.2em;
+  font-size: 1em;
+}
+.contactinfo input {
+  position: absolute;
+  left: 6em;
+}
+#fnameinput, #lnameinput, #emailinput {
+  width: 20em;
+}
+#phoneinput {
+  width: 12em;
+}
+#feedback {
+  width: 98%;
+  display: block;
+}
+#submit {
+  border: 1px solid #999;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #c8f098;
+  border-radius: 0.5em;
+}
+/* label styles */
+label {
+  font-size: 1.2em;
+}
+.contactinfo label {
+  display: block;
+  position: relative;
+  margin: 1em 0;
+}
+.membershipinfo label {
+  margin: 1em;
+}
+
+/* label styles */
+label {
+  clear: left;
+  display: block;
+  float: left;
+  font-size: 0.9em;
+  margin: 7px 4% 7px 5px;
+  width: 50%;
+}
+.contactinfo label {
+  display: block;
+  position: relative;
+  margin: 1em 0;
+}
+.parentAddress label {
+  margin-right: 1.6em;
+}
+/* Input control styles */
+input {
+  display: block;
+  float: left;
+  font-size: 0.9em;
+  margin: 7px 0px;
+  width: 50%;
+}
+contactinfo input {
+  position: relative;
+  left: 6em;
+
+/* Selection list styles */
+select {
+  display: block;
+  float: left;
+  font-size: 0.9em;
+  margin: 7px 0px;
+}
+
+
+/* Year Styles */
+#years {
+  width: 50px;
+}
+
+/* Checkbox styles */
+input#call {
+  clear: left;
+  width: 25px;
+}
+
+input#call+label {
+  clear: none;
+  width: auto;
+}
+
+/* Button Styles */
+input[type="submit"] {
+  clear: left;
+  background-color: rgb(152, 251, 152);
+}
+input[type="reset"]{
+  background-color: rgb(249, 88, 89);
+}
+input[type="submit"], input[type="reset"] {
+  height: 40px;
+  margin-right: 20px;
+  width: 200px;
+}
+
+/* Validation Styles */
+input:focus, select:focus {
+  background-color: ivory;
+}
+
+input:focus:valid {
+  background: rgb(220, 255, 220) url(go.png) bottom right no-repeat;
+
+  -o-background-size: contain;
+  -moz-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+input:focus:invalid {
+  background: rgb(255, 232, 233) url(stop.png) bottom right no-repeat;
+  -o-background-size: contain;
+  -moz-background-size: contain;
+  -webkit-background-size: contain;
+  background-size: contain;
+
+}

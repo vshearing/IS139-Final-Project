@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!--
+  Books and Tablets Website, IS 139 Final Project
+  Author:  Surav Dhungana and Victoria Shearing
+  Date: July 28, 2020
+
+  Filename: application.htm
+  Supproting files: logo.png, styles.css
+  -->
+
+  <title>Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+  <header>
+    <img src="Assets/Images/logo.png" alt="Books and Tablets" />
+  </header>
+  <nav class="horizontal">
+    <ul>
+      <li><a href="index.htm">Home</a></li>
+      <li><a href="aboutUs.htm">About Us<a/></li>
+      <li><a href="classes.htm">Classes</a></li>
+      <li><a href="events.htm">Events</a></li>
+      <li><a href="enrollment.htm">Enrollment</a></li>
+      <li><a href="contactUs.htm">Contact Us</a></li>
+    </ul>
+  </nav>
+  <section id="main">
+    <article>
+    <h1>Enrollment Application</h1>
+  </article>
+    <form name="interestForm" id="interestForm"
+      action="http://www.youngnotesschool.com/cgi-bin/interest"
+      method="post">
+      <article>
+    <fieldset id="contactFields">
+      <legend>Student Information</legend>
+
+      <label for="fName">First Name</label>
+      <input type="text" id="fName" name="fName" required="required">
+
+      <label for="lName">Last Name</label>
+      <input type="text" id="lName" name="lName" required="required">
+
+      <label for="gradeLevel">Grade Level</label>
+      <select id="gradeLevel" name="gradeLevel">
+        <option value="01">8th</option>
+        <option value="02">9th</option>
+        <option value="03">10th</option>
+        <option value="04">11th</option>
+        <option value="05">12th</option>
+      </select>
+      <label for="specialEd">Does the student receive Special Education Services?</label>
+      <select id="specialEd" name="specialEd">
+        <option value="01">No</option>
+        <option value="02">Yes</option>
+      </select>
+
+      <label for="studentAddress">Address</label>
+      <input type="text" id="studentAddress" name="studentAddress" required="required">
+
+      <label for="studentCity">City</label>
+      <input type="text" id="studentCity" name="studentCity" required="required">
+
+      <label for="studentState">State</label>
+      <input type="text" id="studentState" name="studentState" required="required" value="Missouri">
+
+      <label for="studentZip">Postal Code</label>
+      <input type="text" id="studentZip" name="studentZip" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(\-\d{4})?$">
+
+      <label for="studentPhone">Phone</label>
+      <input type="tel" id="studentPhone" name="studentPhone" placeholder="(nnn) nnn-nnnn" required="required"
+      pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+
+      <label for="studentEmail">Email</label>
+      <input type="Email" id="studentEmail" name="studentEmail">
+    </fieldset>
+
+    <fieldset id="otherFields1">
+      <legend>Parent/Guardian Information</legend>
+
+      <label for="pcontact1">Name of Primary Parent</label>
+      <input type="text" id="pcontact1" name="pcontact1" placeholder="Parent or guardian">
+
+      <label for="ctype1" class="blockEntry">Relation to Student</label>
+      <select id="ctype1" name="ctype1">
+          <option value="Mother">Mother</option>
+          <option value="Father">Father</option>
+          <option value="Guardian">Guardian</option>
+      </select>
+          <label for="pcontact2">Name of Secondary Parent</label>
+          <input type="text" id="pcontact2" name="pcontact2" placeholder="Parent or guardian">
+
+          <label for="ctype2" class="blockEntry">Relation to Student</label>
+          <select id="ctype2" name="ctype2">
+              <option value="Mother">Mother</option>
+              <option value="Father">Father</option>
+              <option value="Guardian">Guardian</option>
+      </select>
+
+
+      <label for="Same">Parent address is same as student's</label>
+        <input type="radio" name="selectAddress" id="Same" value="Same" checked>
+
+        <label for="Different">Parent address is different from student's</label>
+          <input type="radio" name="selectAddress" id="Different" value="Different">
+
+    </fieldset>
+
+    <fieldset id="otherFields2">
+      <legend>Parent/Guardian Address</legend>
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" required="required">
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" required="required">
+
+      <label for="state">State</label>
+      <input type="text" id="state" name="state" required="required" value="Missouri">
+
+      <label for="zip">Postal Code</label>
+      <input type="text" id="zip" name="zip" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(\-\d{4})?$">
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="(nnn) nnn-nnnn" required="required"
+      pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email">
+
+    </fieldset>
+    <input type="checkbox" id="call" name="call">
+    <label for="call">Please contact me to schedule a tour of the school</label>
+
+    <input type="submit" value="Submit Information">
+    <input type="reset" value="Cancel">
+  </form>
+  </article>
+      </section>
+  <footer>
+    <address>
+      Books and Tablets &#183;
+      250 N. Ballas &#183;
+      St. Louis, MO 63146 &#183;
+      (314) 223 - 2300 &#183;
+      info@booksandtablets.com
+    </address>
+  </footer>
+</html>
